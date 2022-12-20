@@ -1,6 +1,6 @@
 {
-  "name": "@adobe/aio-cli-plugin-PLUGINNAME",
-  "version": "0.0.0",
+  "name": "@shazron/oclif-hooks-test",
+  "version": "0.0.1",
   "dependencies": {
     "@adobe/aio-lib-core-config": "^2.0.0",
     "@adobe/aio-lib-core-logging": "^1.1.0",
@@ -46,6 +46,9 @@
     "devPlugins": [
       "@oclif/plugin-help"
     ],
+    "hooks": {
+      "deploy-actions": "./src/hooks"
+    },
     "repositoryPrefix": "<%- repo %>/blob/<%- version %>/<%- commandPath %>"
   },
   "main": "src/index.js",
